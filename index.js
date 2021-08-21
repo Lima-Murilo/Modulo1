@@ -3,12 +3,12 @@
   console.log("__________________________________________")
 
 //Exercicio 2
-  // const nomeCompleto = prompt("Digite seu nome completo")
-  // const endereco = prompt("Digite seu endereço")
-  // const cepTelefone = prompt("Digite seu Cep e número de telefone")
-  console.log("Murilo Lima Carrer")
-  console.log("Rua Gonzaguinha n 51 apto 13")
-  console.log("09271-255 e 11992571297")
+  const nomeCompleto = prompt("Digite seu nome completo")
+  const endereco = prompt("Digite seu endereço")
+  const cepTelefone = prompt("Digite seu Cep e número de telefone")
+  console.log(nomeCompleto)
+  console.log(endereco)
+  console.log(cepTelefone)
   console.log("__________________________________________")
 
 //Exercicio 3
@@ -26,8 +26,8 @@
 
 // Exercicio 5
   console.log("Cadastro de Clientes \n0 – Fim \n1 - Inclui \n2 - Altera \n3 - Exclui \n4 - Consulta")
-  // let opcao = prompt("Escolha uma opção")
-  // console.log(`A opção escolhida foi a: ${ opcao }`)
+  let opcao = prompt("Escolha uma opção")
+  console.log(`A opção escolhida foi a: ${ opcao }`)
   console.log("__________________________________________")
 
 // Exercicio 6
@@ -38,14 +38,44 @@
   console.log("__________________________________________")
 
 // Exercicio 7
-  const valorConta = 42.54
-  const taxaServico = valorConta/100
+  const valorRefeicao = 42.54
+  const taxaServico = valorRefeicao/100
   console.log(`Valor da taxa de serviço: R$ ${ taxaServico.toFixed(2) }`)
   console.log("__________________________________________")
 
 // Exercicio 8
+  const valorConta = 100.98
+  const valorPago = 150
+  const valorTroco = Math.round(valorPago - valorConta)
+  console.log(`O valor do troco é de R$ ${ valorTroco }`)
   console.log("__________________________________________")
 
-// Exercicio 1
+// Exercicio 9
+  const anoNascimento = prompt("Digite o ano de seu nascimento")
+  const anoAtual = prompt("Digite o ano atual")
+  const idade = anoAtual - anoNascimento
+  console.log(`${ idade } anos, Você está na flor da idade`)
   console.log("__________________________________________")
 
+// Exercicio 10
+  const valorEmReal = prompt("Digite o valor que quer converter")
+  const valorEmDolar = valorEmReal*0.19
+  const valorEmEuro = valorEmReal*0.16
+  const valorEmLibra = valorEmReal*0.14
+  const valorEmDolarCanadense = valorEmReal*0.24
+  const valorEmPesoArgentino = valorEmReal*18.07
+  const valorEmPesoChileno = valorEmReal*146.2
+  console.log(`$ ${ valorEmDolar.toFixed(2) } em Dólar`)
+  console.log(`$ ${ valorEmEuro.toFixed(2) } em Euro`)
+  console.log(`$ ${ valorEmLibra.toFixed(2) } em Libra`)
+  console.log(`$ ${ valorEmDolarCanadense.toFixed(2) } em Dólar Canadense`)
+  console.log(`$ ${ valorEmPesoArgentino.toFixed(2) } em Peso Argentino`)
+  console.log(`$ ${ valorEmPesoChileno.toFixed(2) } em Peso Chileno`)
+  console.log("__________________________________________")
+
+// Exercicio 11 e 12
+  const valorAluguel = prompt("Digite o valor do seu aluguel")
+  const valorReajuste = prompt("Digite o valor do seu reajuste") 
+  const valorReajustado = (valorAluguel * Number(valorReajuste)/100) + Number(valorAluguel)
+  console.log(valorReajustado)
+  console.log("__________________________________________")
