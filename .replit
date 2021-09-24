@@ -1,4 +1,0 @@
-language = "nodejs"
-run = ""
-
-console.log("teste")
