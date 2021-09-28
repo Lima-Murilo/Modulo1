@@ -4,8 +4,7 @@ const numeroUsuario = +prompt("Digite um número de 1 a 10")
 
 if(numeroAleatorio === numeroUsuario){
   console.log("Parabéns, você acertou!")
-}
-else{
+} else{
   console.log("Que pena, tente outra vez.")
 }
 
@@ -23,11 +22,13 @@ func1(numeroUm, numeroDois)
 const numero = 1
 
 function func1(argumento){
+  return argumento > 0 ? "P" : "N"
+  
   if (argumento > 0){
-    console.log("P")
+    return "P"
   }
   else{
-    console.log("R")
+    return "N"
   }
 }
 
